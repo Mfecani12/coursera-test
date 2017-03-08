@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}   /*this makes the feature of the tablet range to operate correctly*/
+
+
+h1 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+h2 {
+width: 100%;
+height: auto;
+border: 5px orange;
+color: black;
+position: relative;
+top: 20px;
+}
+
+label {
+
+color: black;
+text-align: center;
+position: absolute;
+right: 0px;
+top: 0px;
+border: 0px brown;
+width: 120px;
+float: left;
+
+}
+.label-color-pink{
+  background-color: pink;
+}
+.label-color-red{
+  background-color: red;
+}
+.label-color-yellow{
+  background-color: yellow;
+}
+
+/* define column lengths for responsive design*/
+@media (min-width: 992px) {
+  .col-lg-33pct{
+    float: left;
+    border: 1px solid green;
+    background-color: gray;
+    height: 150px;
+    position: relative;
+  }
+
+.col-lg-33pct {
+width: 33%;
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-50pct, .col-md-100pct {
+    float: left;
+    border: 1px solid green;
+    background-color: gray;
+    height: 150px;
+    position: relative;
+  }
+
+.col-md-50pct {
+  width: 50%;
+}
+.col-md-100pct {
+  width: 100%;
+}
+}
+@media (max-width: 767px) {
+  .col-sm-100pct{
+    float: left;
+    border: 1px solid green;
+    background-color: gray;
+    height: 150px;
+    position: relative;
+  }
+
+.col-sm-100pct {
+  width: 100%;
+}
+}
+.row {
+  width: 100%;
+}
